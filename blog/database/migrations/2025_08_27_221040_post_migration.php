@@ -18,7 +18,13 @@ return new class extends Migration
             $table->string('img', 100);
             $table->string('content');
             $table->integer('likes');
-            $table->integer('user_id');
+            $table->integer('slug');
+
+            
+
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade'); // FK
+            $table->foreignId('categoria_id')->constrained('categorias')->onDelete('cascade'); // FK
+
             $table->timestamps();
         });
     }
