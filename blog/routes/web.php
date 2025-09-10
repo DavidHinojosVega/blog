@@ -18,5 +18,8 @@ Route::get('/post',function(){
 
 Route::get('/about',function(){
         return view('contacto');
+});
 
+Route::get('/dashboard',function(){
+        return view('admin.dashboard');
 });
