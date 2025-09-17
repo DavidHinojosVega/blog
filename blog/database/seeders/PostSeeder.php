@@ -10,7 +10,7 @@ class PostSeeder extends Seeder
 {
     public function run(): void
     {
-    DB::table('categorias')->insert([
+    DB::table('posts')->insert([
             "title" => "como cuidar las plantas",
             "description" => "es una descripcion de nuestro post",
             'img' => 'defauld2.jpg',
@@ -21,7 +21,7 @@ class PostSeeder extends Seeder
             'categoria_id' => 1,
             'created_at' =>date('Y-m-d h:m:s')
         ]);
-    DB::table('categorias')->insert([
+    DB::table('posts')->insert([
             "title" => "plantas",
             "description" => "posfaksdfkasdjaksjdkas ajksdjaksdj",
             'img' => 'defauld3.jpg',

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('img', 100);
             $table->string('content');
             $table->integer('likes');
-            $table->integer('slug');
+            $table->string('slug');
 
             
 
