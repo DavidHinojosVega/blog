@@ -17,7 +17,7 @@ class users_seed extends Seeder
         for($i = 0; $i < 50; $i++){
             DB::table('users')->insert([
             'name'=> 'Admin' .$i,
-            'email'=> 'Admin'.$i.'gmail.com',
+            'email'=> 'Admin'.$i.'@gmail.com',
             'password'=>Hash::make('123'),
             'nickname'=> 'Admin'.$i,
             'img'=> 'defaild2.jpg',
